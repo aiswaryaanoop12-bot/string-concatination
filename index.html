@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Concatenation</title>
+</head>
+<body>
+  <h1>Array Concatenation Result:</h1>
+  <div id="result"></div>
+
+  <script>
+    // Function to concatenate two arrays
+    function concatenateArrays(arr1, arr2) {
+      return arr1.concat(arr2);
+    }
+
+    // Example arrays
+    let array1 = [1, 2, 3];
+    let array2 = [4, 5, 6];
+
+    // Concatenate arrays
+    let result = concatenateArrays(array1, array2);
+
+    // Display result on the webpage
+    document.getElementById("result").innerHTML = JSON.stringify(result);
+  </script>
+</body>
+</html>
